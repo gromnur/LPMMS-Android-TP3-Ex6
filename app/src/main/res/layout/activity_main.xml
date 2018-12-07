@@ -10,40 +10,72 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <TableRow>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                 android:gravity="center"/>
-        </TableRow>
 
-        <TableRow>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mesureConverti"
                 android:gravity="center"/>
-        </TableRow>
 
-        <TableRow>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:src="@drawable/regle"
                 android:contentDescription="@string/DescriptionRegle"
                 />
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lgnPied"
+                />
+
+            <EditText
+                android:id="@+id/etPied"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" />
+
         </TableRow>
 
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+        <TableRow>
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="30" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lgnPouce"
+                />
+
+            <EditText
+                android:id="@+id/etPouces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lgnCentimetre"
+                />
+
+            <EditText
+                android:id="@+id/etCentimetre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+
+        </TableRow>
+
+
 
 
 

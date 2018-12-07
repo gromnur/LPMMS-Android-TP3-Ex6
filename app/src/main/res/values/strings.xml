@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Convertisseur Distance</string>
     <string name="mesureConverti">Pied - Pouce - Centimetre</string>
-    <string name="lgnPied">Pied</string>
-    <string name="lgnPouce">Pouce</string>
-    <string name="lgnCentimetre">Centimetre</string>
+    <string name="lgnPied">Pied : </string>
+    <string name="lgnPouce">Pouce : </string>
+    <string name="lgnCentimetre">Centimetre : </string>
     <string name="msgFin">Si vous souhaitez convertir une distance exprimée rn cintimetres\nIl ne faut pas saisir de pied ni de pouces !</string>
-    <string name="DescriptionRegle">Image d'une regle</string>
+    <string name="DescriptionRegle">Image d\'une règle</string>
 </resources>
