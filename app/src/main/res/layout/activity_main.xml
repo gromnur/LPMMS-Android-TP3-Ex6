@@ -14,21 +14,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textColor="@color/colorAccent"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/mesureConverti"
-                android:gravity="center"/>
-
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:src="@drawable/regle"
-                android:contentDescription="@string/DescriptionRegle"
-                />
+                android:gravity="center"
+                android:textColor="@color/colorAccent"/>
 
         <TableRow>
             <TextView
@@ -75,6 +69,18 @@
 
         </TableRow>
 
+    <TableRow>
+
+        <Button
+        android:id="@+id/bouttonCalculer"
+        android:layout_height="wrap_content"
+        android:text="Calculer"/>
+
+        <Button
+            android:id="@+id/bouttonAnnuler"
+            android:layout_height="wrap_content"
+            android:text="Annuler"/>
+    </TableRow>
 
 
 
