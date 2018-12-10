@@ -29,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lgnPied"
+                android:textColor="@color/colorAccent"
                 />
 
             <EditText
@@ -44,6 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lgnPouce"
+                android:textColor="@color/colorAccent"
                 />
 
             <EditText
@@ -59,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/lgnCentimetre"
+                android:textColor="@color/colorAccent"
                 />
 
             <EditText
@@ -72,15 +75,26 @@
     <TableRow>
 
         <Button
-        android:id="@+id/bouttonCalculer"
+        android:id="@+id/btnCalculer"
         android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
         android:text="Calculer"/>
 
         <Button
-            android:id="@+id/bouttonAnnuler"
+            android:id="@+id/btnAnnuler"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
             android:text="Annuler"/>
     </TableRow>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/msgFin"/>
+
 
 
 
