@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:stretchColumns="1,2"
+    android:stretchColumns="1,2,0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -21,10 +21,8 @@
             />
 
         <EditText
-            android:layout_span="2"
-            android:id="@+id/etPied"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal" />
+            style="@style/editText"
+            android:id="@+id/etPied" />
 
     </TableRow>
 
@@ -35,52 +33,45 @@
             />
 
         <EditText
-            android:layout_span="2"
-            android:id="@+id/etPouces"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+            style="@style/editText"
+            android:id="@+id/etPouces" />
 
     </TableRow>
 
     <TableRow>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/libelleButton"
             android:text="@string/lgnCentimetre"
-            android:textColor="@color/colorAccent"
             />
 
         <EditText
-            android:layout_span="2"
-            android:id="@+id/etCentimetre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"/>
+            style="@style/editText"
+            android:id="@+id/etCentimetre"/>
 
     </TableRow>
 
     <TableRow>
 
         <Button
+            style="@style/boutton"
             android:layout_column="1"
             android:id="@+id/btnCalculer"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
-            android:text="Calculer"/>
+            android:text="Calculer" />
 
         <Button
             android:id="@+id/btnAnnuler"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            style="@style/boutton"
             android:text="Annuler"/>
     </TableRow>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textColor="@color/colorAccent"
+    style="@style/textFin"
         android:text="@string/msgFin"/>
+
+    <TextView
+        style="@style/textFin"
+        android:background="@color/gris"
+        android:text="@string/msgErreur"
+        android:textStyle="bold"/>
 
 </TableLayout>
