@@ -1,76 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TableLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/app_name"
-                android:gravity="center"
-                android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mesureConverti"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/mesureConverti"
-                android:gravity="center"
-                android:textColor="@color/colorAccent"/>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lgnPied"
+            android:textColor="@color/colorAccent"
+            />
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lgnPied"
-                android:textColor="@color/colorAccent"
-                />
+        <EditText
+            android:id="@+id/etPied"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
 
-            <EditText
-                android:id="@+id/etPied"
-                android:layout_width="315dp"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
+    </TableRow>
 
-        </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lgnPouce"
+            android:textColor="@color/colorAccent"
+            />
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lgnPouce"
-                android:textColor="@color/colorAccent"
-                />
+        <EditText
+            android:id="@+id/etPouces"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
 
-            <EditText
-                android:id="@+id/etPouces"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"/>
+    </TableRow>
 
-        </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lgnCentimetre"
+            android:textColor="@color/colorAccent"
+            />
 
-        <TableRow>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lgnCentimetre"
-                android:textColor="@color/colorAccent"
-                />
+        <EditText
+            android:id="@+id/etCentimetre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
 
-            <EditText
-                android:id="@+id/etCentimetre"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal"/>
-
-        </TableRow>
+    </TableRow>
 
     <TableRow>
 
@@ -87,7 +82,6 @@
             android:text="Annuler"/>
     </TableRow>
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -95,10 +89,4 @@
         android:textColor="@color/colorAccent"
         android:text="@string/msgFin"/>
 
-
-
-
-
-    </TableLayout>
-
-</android.support.constraint.ConstraintLayout>
+</TableLayout>
