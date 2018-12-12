@@ -1,35 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:stretchColumns="1,2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:gravity="center"
-        android:textColor="@color/colorAccent"/>
+        style="@style/titre"
+        android:text="@string/app_name" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/mesureConverti"
-        android:gravity="center"
-        android:textColor="@color/colorAccent"/>
+        style="@style/titre"
+        android:text="@string/mesureConverti"/>
 
     <TableRow>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/libelleButton"
             android:text="@string/lgnPied"
-            android:textColor="@color/colorAccent"
             />
 
         <EditText
+            android:layout_span="2"
             android:id="@+id/etPied"
-            android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:inputType="numberDecimal" />
 
@@ -37,13 +30,12 @@
 
     <TableRow>
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/libelleButton"
             android:text="@string/lgnPouce"
-            android:textColor="@color/colorAccent"
             />
 
         <EditText
+            android:layout_span="2"
             android:id="@+id/etPouces"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,6 +52,7 @@
             />
 
         <EditText
+            android:layout_span="2"
             android:id="@+id/etCentimetre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,10 +63,11 @@
     <TableRow>
 
         <Button
-        android:id="@+id/btnCalculer"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorAccent"
-        android:text="Calculer"/>
+            android:layout_column="1"
+            android:id="@+id/btnCalculer"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="Calculer"/>
 
         <Button
             android:id="@+id/btnAnnuler"

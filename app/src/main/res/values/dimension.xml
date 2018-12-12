@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="marge_vertical">15dp</dimen>
+    <dimen name="marge_left">5dp</dimen>
+</resources>
