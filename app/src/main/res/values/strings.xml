@@ -6,5 +6,5 @@
     <string name="lgnCentimetre">Centimetre : </string>
     <string name="msgFin">Si vous souhaitez convertir une distance \nexprimée en centimetres \nIl ne faut pas saisir de pieds ni de pouces !</string>
     <string name="DescriptionRegle">Image d\'une règle</string>
-    <string name="msgErreur">erreur saisie !</string>
+    <string name="msgErreur">Erreur saisie !</string>
 </resources>

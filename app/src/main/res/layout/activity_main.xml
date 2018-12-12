@@ -56,12 +56,14 @@
             style="@style/boutton"
             android:layout_column="1"
             android:id="@+id/btnCalculer"
-            android:text="Calculer" />
+            android:text="Calculer"
+            android:onClick="clicValider"/>
 
         <Button
             android:id="@+id/btnAnnuler"
             style="@style/boutton"
-            android:text="Annuler"/>
+            android:text="Annuler"
+            android:onClick="clicAnnuler"/>
     </TableRow>
 
     <TextView
@@ -70,8 +72,10 @@
 
     <TextView
         style="@style/textFin"
+        android:id="@+id/msgErreur"
         android:background="@color/gris"
         android:text="@string/msgErreur"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:visibility="invisible" />
 
 </TableLayout>
