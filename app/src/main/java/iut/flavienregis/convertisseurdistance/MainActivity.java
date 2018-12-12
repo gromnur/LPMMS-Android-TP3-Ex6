@@ -1,7 +1,6 @@
 package iut.flavienregis.convertisseurdistance;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -49,7 +48,6 @@ public class MainActivity extends Activity {
 
         if (!textCentimetre.isEmpty() && textPouce.isEmpty() && textPied.isEmpty()) {
             // TODO remplir les pied et pouce
-            etPied.setText(etCentimetre);
 
             etPied.setText("-1");
             etPouce.setText("-1");
