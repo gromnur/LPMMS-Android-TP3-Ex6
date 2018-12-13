@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
 
     TextView errSaisie;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,33 +48,38 @@ public class MainActivity extends Activity {
         String textPouce = etPouce.getText().toString();
 
         if (!textCentimetre.isEmpty() && textPouce.isEmpty() && textPied.isEmpty()) {
-            // TODO remplir les pied et pouce
+            Double pied = Double.parseDouble(textCentimetre)/30.48;
+            Double pouce = Double.parseDouble(textCentimetre)/2.54;
 
-            etPied.setText("-1");
-            etPouce.setText("-1");
+            etPied.setText(String.format("%.2f",pied));
+            etPouce.setText(String.format("%.6f",pouce));
+
             etPied.setTextColor(getColor(R.color.vert));
             etPouce.setTextColor(getColor(R.color.vert));
 
         } else if (textCentimetre.isEmpty() && !textPouce.isEmpty() && textPied.isEmpty()) {
-            // TODO remplir les centimetre et pouce
+            Double centimetre = Double.parseDouble(textPouce)*2.54;
+            Double pied = Double.parseDouble(textPouce)/12;
 
-            etCentimetre.setText("-1");
-            etPied.setText("-1");
+            etCentimetre.setText(String.format("%.2f",centimetre));
+            etPied.setText(String.format("%.2f",pied));
+
             etCentimetre.setTextColor(getColor(R.color.vert));
             etPied.setTextColor(getColor(R.color.vert));
 
         } else if (textCentimetre.isEmpty() && textPouce.isEmpty() && !textPied.isEmpty()) {
-            // TODO remplir les centimetre et pouce
+            Double centimetre = Double.parseDouble(textPied)*30.48;
+            Double pouce = Double.parseDouble(textPied)*12;
 
-            etCentimetre.setText("-1");
-            etPouce.setText("-1");
+            etCentimetre.setText(String.format("%.2f",centimetre));
+            etPouce.setText(String.format("%.2f",pouce));
             etCentimetre.setTextColor(getColor(R.color.vert));
             etPouce.setTextColor(getColor(R.color.vert));
 
-        } else if (textCentimetre.isEmpty() && !textPouce.isEmpty() && !textPied.isEmpty()) {
-            // TODO remplir les centimetre
+        } else if (textCentimetre.isEmpty() && !textPouce.isEmpty()) {
+            Double centimetre = Double.parseDouble(textPied)*30.48 + Double.parseDouble(textPouce)*2.54;
 
-            etCentimetre.setText("-1");
+            etCentimetre.setText(String.format("%.2f",centimetre));
             etCentimetre.setTextColor(getColor(R.color.vert));
         } else {
             errSaisie.setVisibility(View.VISIBLE);
